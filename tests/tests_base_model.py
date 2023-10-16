@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+"""
+This module defines the storage system (File System) for the project.
+It uses JSON format to serialize or deserialize objects.
+"""
+
+import json
+
+
+class FileStorage:
+    """This class serves as an ORM to interface with our storage system."""
+
+    # Private class variables
+    __objects: dict = {}
+    __file_path: str = "file.json"
+    models = (
+        "BaseModel"
+    )
